@@ -1,5 +1,5 @@
-import logo from "../assets/logo.png";
-import MenuSelection from "../components/menuSelection.jsx";
+import Logo from "../layout/logo.jsx";
+import MenuSelection from "../containers/menuSelection.jsx";
 import { NavLink } from "react-router-dom";
 
 //Icones
@@ -13,7 +13,7 @@ const Header = () => {
           <p className="font-semibold text-0.7xl">Suporte</p>
         </nav>
         <header className="w-full flex justify-around text-black py-2 px-8 md:px-0 bg-white drop-shadow-md">
-          <img className="h-12" src={logo} alt="/" />
+          <Logo/>
 
 
                 <MenuSelection />     

@@ -11,7 +11,7 @@ export const PasswordInput = ({...props }) => {
       {/* Campo de senha */}
       <input
         type={showPassword ? "text" : "password"}
-        className="input flex-1 outline-none bg-transparent"
+        className="input w-full flex-1 outline-none bg-transparent"
         {...props}
       />
 

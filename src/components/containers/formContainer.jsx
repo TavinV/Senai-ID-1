@@ -1,11 +1,11 @@
-export const FormContainer = ({ title, buttonText, onSubmit, children }) => {
+export const FormContainer = ({ title, buttonText, onSubmit, width, children, gap}) => {
   return (
     <form
       onSubmit={(e) => {
         e.preventDefault(); // evita recarregar a página
         onSubmit?.();
       }}
-      className="border border-gray-300 rounded-xl shadow-lg min-w-md overflow-hidden bg-white "
+      className={"border border-gray-300 rounded-xl shadow-lg overflow-hidden bg-white w-full"  + (width ? ` max-w-${width}` : " max-w-lg") + " flex flex-col"}
     >
       {/* Cabeçalho vermelho */}
       <div className="bg-red-600 text-white text-2xl text-center py-3 font-semibold">
@@ -13,7 +13,7 @@ export const FormContainer = ({ title, buttonText, onSubmit, children }) => {
       </div>
 
       {/* Conteúdo do formulário */}
-      <div className="p-8 flex flex-col gap-4">
+      <div className={"p-8 flex flex-col" + (gap ? ` gap-${gap}` : " gap-4")}>
         {children}
       </div>
 

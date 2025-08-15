@@ -1,4 +1,4 @@
-import logo from "../assets/senai.png";
+import Logo from "./logo.jsx";
 import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
@@ -9,7 +9,7 @@ const Header = () => {
           </NavLink>
         </nav>
         <header className="w-full flex justify-center text-black py-2 px-8 md:px-0 bg-white drop-shadow-md">
-          <img className="h-10" src={logo} alt="/" />
+          <Logo/>
         </header>
       </>
     );
