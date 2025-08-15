@@ -10,6 +10,8 @@ import { FormContainer } from '../components/containers/formContainer.jsx';
 // icons
 import { IconInput } from '../components/inputs/iconInput.jsx';
 import { PasswordInput } from '../components/inputs/passwordInput.jsx';
+import { IconInput } from '../components/inputs/iconInput.jsx';
+import { PasswordInput } from '../components/inputs/passwordInput.jsx';
 import { GraduationCap } from 'lucide-react';
 
 // util

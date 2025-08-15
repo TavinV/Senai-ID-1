@@ -4,16 +4,22 @@ import { createRoot } from 'react-dom/client';
 
 //Pages 
 import Login from './pages/login.jsx';
+
 import Support from './pages/support.jsx';
+
 import Register from './pages/register.jsx'
+
 
 import './index.css';
 
 
 const router = createBrowserRouter([
   {path: '/', element: <Register />},
+  {path: '/', element: <Register />},
   {path: '/login', element: <Login />},
   {path: '/support', element: <Support />},
+
+  {path: '/register', element: <Register />},
   {path: '/login', element: <Login />}
 ]);
 
